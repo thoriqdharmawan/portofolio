@@ -77,11 +77,15 @@ export default function SimpleTabs() {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Tabs value={value} onChange={handleChange} className={classes.tabs} aria-label="simple tabs example">
+        <Tabs value={value} onChange={handleChange} className={classes.tabs} aria-label="simple tabs example" 
+          variant="scrollable"
+          scrollButtons="auto" >
           <Tab label="Welcome" {...a11yProps(0)} />
           <Tab label="Profil" {...a11yProps(1)} />
           <Tab label="Pengalaman" {...a11yProps(2)} />
           <Tab label="Portofolio" {...a11yProps(3)} />
+          <Tab label="Kelahlian" {...a11yProps(4)} />
+          <Tab wrapped label="Sertifikasi dan Pelatihan" {...a11yProps(5)} />
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -100,6 +104,12 @@ export default function SimpleTabs() {
         </TabPanel>
         <TabPanel className={classes.body} value={value} index={3}>
          <Portofolio />
+        </TabPanel>
+        <TabPanel className={classes.body} value={value} index={4}>
+          Keahlianku
+        </TabPanel>
+        <TabPanel className={classes.body} value={value} index={5}>
+          Sertifikasi dan Pelatihan
         </TabPanel>
       </SwipeableViews>
     </div>

@@ -19,8 +19,11 @@ const useStyles =  makeStyles({
         margin: '5px 0px 22px 0px'
     },
     profileHead: {
-        margin: '12px 0px',
-        textAlign: 'center'
+        padding: '12px 0px',
+        backgroundColor: '#2D3A54',
+        textAlign: 'center',
+        color: 'white',
+        margin: '25px -24px'
     },
     profileTable: {
         margin: 'auto'

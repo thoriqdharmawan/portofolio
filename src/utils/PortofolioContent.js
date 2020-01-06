@@ -1,9 +1,8 @@
 import React from 'react';
-import Galeri from '../utils/Galeri';
 
 // MUI
-import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
+
 
 const useStyles = makeStyles({
     portofolioWrapper: {
@@ -12,7 +11,8 @@ const useStyles = makeStyles({
     },
     stylejudul: {
         color: '#2D3A54',
-        marginBottom: '-2px'
+        marginBottom: '-2px',
+        marginTop: '0'
     },
     stylerole: {
 

@@ -4,7 +4,6 @@ import { makeStyles  } from '@material-ui/core/styles';
 
 // MUI
 import InfoIcon from '@material-ui/icons/Info';
-import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles =  makeStyles({
@@ -13,9 +12,7 @@ const useStyles =  makeStyles({
       border: 'none'
     },
     titleContent: {
-        display: 'inline-block'
-    },
-    titleContent: {
+        display: 'inline-block',
         fontSize: 24,
         fontWeight: 'bold',
         marginBottom: '-6px'

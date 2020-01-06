@@ -1,12 +1,6 @@
-import React, { useEffect } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import photoOne from '../assets/galeri/1.png';
-import photoTwo from '../assets/galeri/2.png';
-// import photoThree from '../assets/galeri/m1.png';
-// import photoFour from '../assets/galeri/m2.png';
-// import photoFive from '../assets/galeri/m3.png';
 
 // MUI
 import { makeStyles } from '@material-ui/core/styles';
@@ -14,38 +8,35 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles({
     galeri: {
         width: 'auto',
-        height: 'auto',
-        display: 'inline-block'
-    },
-    imgWrapper: {
-        height: '300px'
-    },
-    one: {
-        backgroundColor: 'red',
+        height: '100%',
         display: 'inline-block',
-        height: 200,
-        width: 100
     }
 });
 
-const Galeri = () => {
+const Galeri = ({src1, src2, src3, src4}) => {
     const classes = useStyles();
+
     return (
-        <Carousel 
+        <Carousel width="auto"
             infiniteLoop 
             centerMode
             autoPlay 
             emulateTouch
             showArrows={false}
-            showThumbs={false}
             showStatus={false}
         >
-            <div className={classes.imgWrapper}>
-                <img className={classes.galeri}  src={photoOne} alt="FotoThoriq" />
-           </div>
+            <div>
+                <img className={classes.galeri}  src={src1} alt="FotoThoriq" />
+            </div>
             <div >
-                <img className={classes.galeri}  src={photoTwo} alt="FotoThoriq" />
-           </div>
+                <img className={classes.galeri}  src={src2} alt="FotoThoriq" />
+            </div>
+            <div >
+                <img className={classes.galeri}  src={src3} alt="FotoThoriq" />
+            </div>
+            <div >
+                <img className={classes.galeri}  src={src4} alt="FotoThoriq" />
+            </div>
         </Carousel>
     )
 }

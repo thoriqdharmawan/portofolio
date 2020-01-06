@@ -3,7 +3,6 @@ import React from 'react';
 import { makeStyles  } from '@material-ui/core/styles';
 
 // MUI
-import InfoIcon from '@material-ui/icons/Info';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 
@@ -34,7 +33,8 @@ const useStyles =  makeStyles({
     classSubtitleContent: {
         marginTop: '-6px',
         color: '#B3B2BE',
-        fontSize: 13
+        fontSize: 13,
+        fontWeight: '200'
     },
     myCardHeader: {
         padding: 2
