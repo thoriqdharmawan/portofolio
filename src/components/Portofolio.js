@@ -6,6 +6,7 @@ import Teknologi from '../utils/Teknologi';
 // MUI
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
+
 // LOGO
 import materializeUI from '../assets/logo/materializeUI.png';
 import reactRouter from '../assets/logo/reactRouter.png';
@@ -23,6 +24,7 @@ import mysql from '../assets/logo/mysql.png';
 import jquery from '../assets/logo/jquery.png';
 import bootstrap from '../assets/logo/bootstrap.png';
 import sbadmin from '../assets/logo/sbadmin.png';
+import postman from '../assets/logo/postman.png';
 
 // ss
 import photoOne from '../assets/galeri/1.png';
@@ -62,7 +64,7 @@ const Portofolio = () => {
                     <PortofolioContent 
                         judul="Social Media"
                         role="Fullstack"
-                        deskripsi="Pembuatan aplikasi sosial media menggunakan Node.js, Firebase, dan React.js, aplikasi ini mempunyai berbagai macam fitur seperti: Login, Signup, Edit profil (foto, bio, dan lokasi), Posting, Like posting, Comment posting, Delete posting"
+                        deskripsi="Pembuatan aplikasi sosial media menggunakan Node.js, Firebase, dan React.js, aplikasi ini mempunyai berbagai macam fitur seperti: Login, Signup, Edit profil (foto, bio, dan lokasi), Posting, Like posting, Comment posting, Delete posting, hingga push notification, dll."
                         teknologi={
                             <div>
                                 <Teknologi judul="Node.js" sumber={nodejs} />
@@ -73,6 +75,7 @@ const Portofolio = () => {
                                 <Teknologi judul="React Router" sumber={reactRouter} />
                                 <Teknologi judul="Materialize-UI" sumber={materializeUI} />
                                 <Teknologi judul="GIT" sumber={git} />
+                                <Teknologi judul="Postman" sumber={postman} />
                             </div>
                         }
                     />
@@ -92,7 +95,7 @@ const Portofolio = () => {
                     <PortofolioContent 
                         judul="Fully Login System"
                         role="Fullstack"
-                        deskripsi="Pembuatan sistem login lengkap dengan validasi Login dan Signup, dan terdapat 2 tingkatan pengguna yang berbeda, yaitu: admin, user. Selain itu aplikasi ini juga dapat menambahkan, mengubah, dan menghapus menu yang ada"
+                        deskripsi="Pembuatan sistem login lengkap dengan validasi Login dan Signup, dan terdapat 3 tingkatan pengguna yang berbeda, yaitu: admin, superuser, dan user. Tiap tingkatan pengguna mempunyai kelebihannya tersendiri dalam menggunakan aplikasi ini. Selain itu aplikasi ini juga dapat menambahkan, mengubah, dan menghapus menu yang ada sesuai dengan tingkatan pengguna."
                         teknologi={
                             <div>
                                 <Teknologi judul="PHP" sumber={php} />
@@ -120,7 +123,7 @@ const Portofolio = () => {
                     <PortofolioContent 
                         judul="Authenticated Notes"
                         role="Fullstack"
-                        deskripsi="Pembuatan aplikasi note online dengan mengguanakan fitur autentikasi, note yang dibuat dapat diedit dan dihapus."
+                        deskripsi="Pembuatan aplikasi note online dengan mengguanakan fitur autentikasi, sehingga pengguna dapat membuat dan melihat note secara fleksibel. Note yang dibuat dapat diedit dan dihapus."
                         teknologi={
                             <div>
                                 <Teknologi judul="Firebase" sumber={firebase} />

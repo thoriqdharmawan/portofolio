@@ -1,8 +1,17 @@
 import React from 'react';
+import { makeStyles  } from '@material-ui/core/styles';
+
+const useStyles =  makeStyles({
+    tabel: {
+        margin: '0px 65px 0px auto'
+    }
+});
+  
 
 const TabelProfil = () => {
+    const classes = useStyles();
     return (
-        <table>
+        <table className={classes.tabel}>
             <tr>
                 <td>Nama</td>
                 <td>: </td>

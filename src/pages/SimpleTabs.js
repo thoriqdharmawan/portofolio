@@ -5,6 +5,8 @@ import Welcome from '../components/Welcome';
 import Profile from '../components/Profile';
 import Pengalaman from '../components/Pengalaman';
 import Portofolio from '../components/Portofolio';
+import Sertifikasi from '../components/Sertifikasi';
+import Keahlian from '../components/Keahlian';
 
 import { makeStyles, useTheme  } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -80,12 +82,12 @@ export default function SimpleTabs() {
         <Tabs value={value} onChange={handleChange} className={classes.tabs} aria-label="simple tabs example" 
           variant="scrollable"
           scrollButtons="auto" >
-          <Tab label="Welcome" {...a11yProps(0)} />
+          <Tab label="Selamat Datang" {...a11yProps(0)} />
           <Tab label="Profil" {...a11yProps(1)} />
           <Tab label="Pengalaman" {...a11yProps(2)} />
           <Tab label="Portofolio" {...a11yProps(3)} />
           <Tab label="Kelahlian" {...a11yProps(4)} />
-          <Tab wrapped label="Sertifikasi dan Pelatihan" {...a11yProps(5)} />
+          <Tab wrapped label="Sertifikat dan Pelatihan" {...a11yProps(5)} />
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -106,10 +108,10 @@ export default function SimpleTabs() {
          <Portofolio />
         </TabPanel>
         <TabPanel className={classes.body} value={value} index={4}>
-          Keahlianku
+          <Keahlian />
         </TabPanel>
         <TabPanel className={classes.body} value={value} index={5}>
-          Sertifikasi dan Pelatihan
+          <Sertifikasi />
         </TabPanel>
       </SwipeableViews>
     </div>

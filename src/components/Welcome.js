@@ -1,14 +1,11 @@
-import React,  { useState } from 'react';
+import React from 'react';
 import TextLoop from "react-text-loop";
 // MUI
 import Button from '@material-ui/core/Button';
 import { makeStyles  } from '@material-ui/core/styles';
-import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
-import TextField from '@material-ui/core/TextField';
+import Link from '@material-ui/core/Link';
+
+
 
 const useStyles =  makeStyles({
     wrapper: {
@@ -41,30 +38,32 @@ const useStyles =  makeStyles({
         fontWeight: '300'
     },
     welcomeButton: {
-        marginTop: 50,
+        marginTop: 28,
         padding: '10px 40px'
     },
     span: {
         color: '#A950A1'
+    },
+    center: {
+        textAlign: 'center'
+    },
+    link: {
+        display: 'block',
+        fontWeight: 500,
+        fontSize: '13px',
+        marginTop: '9px'
+    }, 
+    space: {
+        marginRight: '20px'
     }
 });
 
 const Welcome = () => {
     const classes = useStyles();
-    const [name, setName] = useState('Andi');
-    const [open, setOpen] = useState(false);
-
-    const handleOpen = () => {
-        setOpen(true);
-    }
-
-    const handleClose = () => {
-        setOpen(false);
-    }
 
     return (
         <div color="primary" className={classes.wrapper}>
-            <h2 className={classes.welcomeHeadline}>Hai{name}, Saya adalah{" "}
+            <h2 className={classes.welcomeHeadline}>Hai, Saya adalah{" "}
                 <TextLoop interval={1500}>
                     <span className={classes.span}> Thoriq Dharmawan</span>
                     <span className={classes.span}> Web Developer</span>
@@ -75,42 +74,14 @@ const Welcome = () => {
             <p className={classes.welcomeParagraph}>"I always give the best effort for each projects I did. I give a solution with my creative app."</p> 
             <h4 className={classes.welcomeContact}>+62 895 6346 89984</h4>
             <h4 className={classes.welcomeEmail}>thoriqd21@gmail.com</h4>
-            <Button onClick={handleOpen} className={classes.welcomeButton} variant="contained" color="primary">
-                Download CV
-            </Button>
-
-            <Dialog
-                open={open}
-                onClose={handleClose}
-                fullWidth={true}
-                maxWidth="md"
-                aria-labelledby="max-width-dialog-title"
-            >
-                <DialogTitle style={{ cursor: 'move' }} id="draggable-dialog-title">
-                    Hai :D
-                </DialogTitle>
-                <DialogContent>
-                    <DialogContentText>
-                        Bolehkah saya tau nama anda?
-                    </DialogContentText>
-                </DialogContent>
-                <TextField
-                    autoFocus
-                    margin="dense"
-                    id="name"
-                    label="Email Address"
-                    type="email"
-                    fullWidth
-                />
-                <DialogActions>
-                    <Button autoFocus onClick={handleClose} color="primary">
-                        Tidak
-                    </Button>
-                    <Button onClick={handleClose} color="primary">
-                        Kirim
-                    </Button>
-                </DialogActions>
-            </Dialog>
+            <Link href="#" target="_blank">
+                <Button className={classes.welcomeButton} variant="contained" color="primary">
+                    Download CV
+                </Button>
+            </Link>
+            <Link href="#" target="_blank" className={classes.link}>
+                Download Berkas Pendukung 
+            </Link>
         </div>
     )
 }
