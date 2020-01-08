@@ -74,12 +74,12 @@ const Welcome = () => {
             <p className={classes.welcomeParagraph}>"I always give the best effort for each projects I did. I give a solution with my creative app."</p> 
             <h4 className={classes.welcomeContact}>+62 895 6346 89984</h4>
             <h4 className={classes.welcomeEmail}>thoriqd21@gmail.com</h4>
-            <Link href="#" target="_blank">
+            <Link href="https://docs.google.com/uc?export=download&id=1sWTWQ9qPX2e30m2K_UAohEKzwfu7I7O7" target="_blank">
                 <Button className={classes.welcomeButton} variant="contained" color="primary">
                     Download CV
                 </Button>
             </Link>
-            <Link href="#" target="_blank" className={classes.link}>
+            <Link href="https://docs.google.com/uc?export=download&id=1Dd4ye-dfB-x3yB52tf6vj8_Sa3-js-HC" target="_blank" className={classes.link}>
                 Download Berkas Pendukung 
             </Link>
         </div>

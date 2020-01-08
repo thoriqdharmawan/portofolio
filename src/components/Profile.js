@@ -84,7 +84,7 @@ const Profile = () => {
                 <Grid item xs={12} sm={2}></Grid>
                 <Grid item xs={12} sm={8}>
                     <p className={classes.desc}>
-                    Saya adalah anak pertama dari 2 orang bersaudara, saya lulusan baru Telkom University D3 Teknik Telekomunikasi, seusai lulus kuliah saya sempat mengerjakan beberapa proyek yang saya dapatkan.
+                    Nama saya Thoriq Dharmawan, saya lulusan D3 Teknik Telekomunikasi Telkom University Bandung, saya terbiasa dengan dunia pemrograman, terutama pemrograman web dengan React.js, PHP Codeigniter, selain itu saya suka mendesain tampilan UI/UX untuk keperluan desain.
                     </p>
                 </Grid>
                 <Grid item xs={12} sm={2}></Grid>
