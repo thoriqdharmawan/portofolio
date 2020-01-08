@@ -30,7 +30,7 @@ const Sertifikasi = () => {
                     nomor="No. SP1 13520/BHS.0/2019"
                 />
                 <Sertifikat 
-                    judul="Certified Secure Computer user (CSCU)"
+                    judul="Certified Secure Computer User (CSCU)"
                     penyelenggara="Netkrom Academy"
                     nomor="Certificated Code: NET_CSCU_AA298"
                 />
